@@ -2,3 +2,9 @@
     background-color: $main-color;
     box-shadow: 0px 2px 0px $shadow-color;
 }
+
+@mixin input-feedback-variation($color) {
+    input { border-radius: $radius $radius 0 0 !important; }
+    input { border-color: $color; }
+    .input-feedback { background-color: $color; }
+}

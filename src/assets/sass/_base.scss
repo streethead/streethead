@@ -1,18 +1,10 @@
-html {
-    box-sizing: border-box;
-}
+html { box-sizing: border-box; }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+*, *:before, *:after { box-sizing: inherit; }
 
-body {
-    font-family: 'Lato', sans-serif;
-}
+body { font-family: 'Lato', sans-serif; }
 
-textarea:focus, input:focus{
-    outline: 0;
-}
+textarea:focus, input:focus{ outline: 0; }
 
 a {
     color: $iron;

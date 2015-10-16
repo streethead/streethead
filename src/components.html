@@ -39,14 +39,6 @@
                     <i class="fa fa-warning input-feedback-icon"></i>
                 </div>
             </div>
-
-            <div class="form-entry has-state">
-                <input type="text" placeholder="Something" class="has-state">
-                <div class="input-feedback">
-                    A generic message
-                    <i class="fa fa-circle input-feedback-icon"></i>
-                </div>
-            </div>
         </form>
 
         <!-- @Buttons -->
@@ -111,5 +103,43 @@
             </div>
         </form>
     </div>
+
+    <style>
+        /* Only for the development purposes */
+        .components-container {
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .components-container > form {
+            width: 33.3333%;
+            padding: 10px;
+            padding-top: 80px;
+            border-top: #242528 6px solid;
+            position: relative;
+
+        }
+
+        .components-container > form::before {
+            content: attr(data-typeset);
+            font-size: 25px;
+            font-weight: 900;
+            padding: 10px 40px;
+            background-color: #242528;
+            color: #fff;
+            position: absolute;
+            top: -6px;
+            left:0px;
+        }
+
+        .modal {
+            margin-bottom: 25px;
+        }
+
+        .modal:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </body>
 </html>

@@ -1,40 +1,14 @@
-.components-container {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+>Inputs
+>Buttons
+>Checkboxes
+>Labels
+>Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.components-container > form {
-    width: 33.3333%;
-    padding: 10px;
-    padding-top: 80px;
-    border-top: $iron 6px solid;
-    position: relative;
+/* >Inputs */
 
-    &::before {
-        content: attr(data-typeset);
-        font-size: 25px;
-        font-weight: 900;
-        padding: 10px 40px;
-        background-color: $iron;
-        color: #fff;
-        position: absolute;
-        top: -6px;
-        left:0px;
-    }
-}
-
-.modal {
-    margin-bottom: 25px;
-}
-
-.modal:last-child {
-    margin-bottom: 0px;
-}
-
-/* Up to here just for dev purpose */
-
-/* =Inputs */
 input[type="text"],
 input[type="password"] {
     border: $iron 1px solid;
@@ -45,15 +19,9 @@ input[type="password"] {
     display: block;
 }
 
-.form-entry input[type="text"],
-.form-entry input[type="password"]{
-    width: 100%;
-}
-
 .input-feedback {
-    background-color: $iron;
     padding: 8px 15px;
-    padding-right: 16px; /* Make room for the icon */
+    padding-right: 20px; /* Make room for the icon */
     border-radius: 0 0 $radius $radius;
     color: #fff;
     font-size: 12px;
@@ -67,29 +35,12 @@ input[type="password"] {
     font-size: 14px;
 }
 
-.has-state {
-    input { border-radius: $radius $radius 0 0 !important; }
-}
+.has-error { @include input-feedback-variation($error); }
+.has-success { @include input-feedback-variation($success); }
+.has-warning { @include input-feedback-variation($warning); }
 
-.has-error {
-    @extend .has-state;
-    input { border-color: $error; }
-    .input-feedback { background-color: $error; }
-}
+/* >Buttons */
 
-.has-success {
-    @extend .has-state;
-    input { border-color: $success; }
-    .input-feedback { background-color: $success; }
-}
-
-.has-warning {
-    @extend .has-state;
-    input { border-color: $warning; }
-    .input-feedback { background-color: $warning; }
-}
-
-/* =Buttons */
 input[type="button"],
 input[type="submit"],
 button {
@@ -110,18 +61,27 @@ button {
     }
 
     &:active:focus,
-    &:focus{
+    &:focus {
         outline: 0;
     }
 }
 
-/* =Checkboxes */
+.btn-primary { @include btn-variation($yellow, $yellow-shadow); }
+.btn-success { @include btn-variation($success, $success-shadow); }
+.btn-error { @include btn-variation($error, $error-shadow); }
+.btn-warning { @include btn-variation($warning, $warning-shadow); }
+.btn-secondary { @include btn-variation($secondary, $secondary-shadow); }
+.btn-not-important { @include btn-variation($not-important, $not-important-shadow); }
+
+/* >Checkboxes */
+
 input[type="checkbox"] {
     margin: 6px;
     margin-left: 4px;
 }
 
-/* =Labels */
+/* >Labels */
+
 label {
     font-weight: 400;
     font-size: 14px;
@@ -132,19 +92,8 @@ label {
     user-select: none;
 }
 
-.btn-primary { @include btn-variation($yellow, $yellow-shadow); }
+/* >Forms */
 
-.btn-success { @include btn-variation($success, $success-shadow); }
-
-.btn-error { @include btn-variation($error, $error-shadow); }
-
-.btn-warning { @include btn-variation($warning, $warning-shadow); }
-
-.btn-secondary { @include btn-variation($secondary, $secondary-shadow); }
-
-.btn-not-important { @include btn-variation($not-important, $not-important-shadow); }
-
-/* =Forms */
 .form-entry {
     margin-bottom: 15px;
     &:last-child { margin-bottom: 0px; }

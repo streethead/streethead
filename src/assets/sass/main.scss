@@ -7,8 +7,18 @@
 @import 'modals';
 @import 'access-modals';
 
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+>Layout
+>Body
+>Sociallinks
+>Logo
+>Searchbox
+>Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* =Layout */
+
+/* >Layout */
 
 .wrapper {
     height: 100vh;
@@ -18,8 +28,7 @@
 }
 
 
-/* =Body */
-
+/* >Body */
 
 .body {
     flex: 1 0 auto;
@@ -28,7 +37,7 @@
     align-items: center;
 }
 
-/* =Social Links */
+/* >Social Links */
 
 .access-links {
     list-style: none;
@@ -67,7 +76,7 @@
     }
 }
 
-/* =Logo */
+/* >Logo */
 
 .logo {
     flex: 5;
@@ -77,7 +86,7 @@
     }
 }
 
-/* =Search box */
+/* >Searchbox */
 
 .search-box {
     text-align: center;
@@ -121,7 +130,7 @@
     margin-top: 8px;
 }
 
-/* =Footer */
+/* >Footer */
 
 .footer {
     display: flex;

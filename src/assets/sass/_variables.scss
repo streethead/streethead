@@ -1,17 +1,24 @@
-/* Main Colors */
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+>Main Colors
+>Validation Colors
+>Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* >Main Colors */
 $yellow: #ffd200;
 $yellow-shadow: #C4A203;
+
 $iron: #242528;
 $iron-shadow: #5C5B5B;
 
-/* Utilities */
-$radius: 6px;
-
-/* Validation Colors */
+/* >Validation Colors */
 $success: #1EC689;
 $success-shadow: #198E64;
+
 $error: #E52E2D;
 $error-shadow: #A71F1E;
+
 $warning: #C4A203;
 $warning-shadow: #BF980E;
 
@@ -20,3 +27,6 @@ $secondary-shadow: #397AAB;
 
 $not-important: #E0E1E2;
 $not-important-shadow: #CACBCD;
+
+/* >Utilities */
+$radius: 6px;
