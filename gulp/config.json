@@ -1,0 +1,11 @@
+{
+    "styles": {
+        "src": "src/assets/sass/*.scss",
+        "dist": ".temp/assets/css"
+    },
+    "templates": {
+        "src": "src/*.html"
+    },
+    "src": "src",
+    "temp": ".temp"
+}
