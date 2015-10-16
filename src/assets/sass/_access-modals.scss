@@ -1,0 +1,35 @@
+.joining-modal,
+.connecting-model {
+    width: 580px; /* @todo to be removed */
+}
+
+.underlined-headline {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-bottom: $iron 1px solid;
+    padding-bottom: 20px;
+}
+
+.divider {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $iron;
+        flex: 1 0 auto;
+    }
+
+    &:before { margin-right: 40px }
+    &:after { margin-left: 40px }
+}

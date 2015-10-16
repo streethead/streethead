@@ -1,10 +1,10 @@
-.container {
+.components-container {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
-.container > form {
+.components-container > form {
     width: 33.3333%;
     padding: 10px;
     padding-top: 80px;
@@ -22,14 +22,6 @@
         top: -6px;
         left:0px;
     }
-}
-
-.form-entry {
-    margin-bottom: 25px;
-}
-
-.form-entry:last-child {
-    margin-bottom: 0px;
 }
 
 .modal {
@@ -99,6 +91,7 @@ input[type="password"] {
 
 /* =Buttons */
 input[type="button"],
+input[type="submit"],
 button {
     border: none;
     border-radius: $radius;
@@ -122,32 +115,48 @@ button {
     }
 }
 
-.btn-primary {
-    @include btn-variation($yellow, $yellow-shadow);
+/* =Checkboxes */
+input[type="checkbox"] {
+    margin: 6px;
+    margin-left: 4px;
 }
 
-.btn-success {
-    @include btn-variation($success, $success-shadow);
+/* =Labels */
+label {
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.btn-error {
-    @include btn-variation($error, $error-shadow);
-}
+.btn-primary { @include btn-variation($yellow, $yellow-shadow); }
 
-.btn-warning {
-    @include btn-variation($warning, $warning-shadow);
-}
+.btn-success { @include btn-variation($success, $success-shadow); }
 
-.btn-secondary {
-    @include btn-variation($secondary, $secondary-shadow);
-}
+.btn-error { @include btn-variation($error, $error-shadow); }
 
-.btn-not-important {
-    @include btn-variation($not-important, $not-important-shadow);
-}
+.btn-warning { @include btn-variation($warning, $warning-shadow); }
+
+.btn-secondary { @include btn-variation($secondary, $secondary-shadow); }
+
+.btn-not-important { @include btn-variation($not-important, $not-important-shadow); }
 
 /* =Forms */
+.form-entry {
+    margin-bottom: 15px;
+    &:last-child { margin-bottom: 0px; }
+}
+
+.form-entry--modal {
+    margin-bottom: 35px;
+    &:last-child { margin-bottom: 0px; }
+}
+
 .form-entry input[type="text"],
+.form-entry input[type="submit"],
 .form-entry input[type="password"],
 .form-entry input[type="button"],
 .form-entry button {

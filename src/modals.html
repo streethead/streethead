@@ -7,106 +7,109 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .overlay {
+            display: flex;
+            background-color: rgba(36, 37, 40, 0.6);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <form data-typeset="Inputs">
-            <div class="form-entry">
-                <input type="text" placeholder="Username" value="electrik_frog">
-            </div>
-
-            <div class="form-entry has-success">
-                <input type="text" placeholder="Username" value="electrik_frog">
-                <div class="input-feedback">
-                    You user name is available
-                    <i class="fa fa-check-circle input-feedback-icon"></i>
-                </div>
-            </div>
-
-            <div class="form-entry has-error">
-                <input type="text" placeholder="Email" value="not_a_valid@email">
-                <div class="input-feedback">
-                    Please provide us with a valid email adress
-                    <i class="fa fa-info-circle input-feedback-icon"></i>
-                </div>
-            </div>
-
-            <div class="form-entry has-warning">
-                <input type="password" placeholder="Password" value="letmein">
-                <div class="input-feedback">
-                    This password is not strong enough
-                    <i class="fa fa-warning input-feedback-icon"></i>
-                </div>
-            </div>
-
-            <div class="form-entry has-state">
-                <input type="text" placeholder="Something" class="has-state">
-                <div class="input-feedback">
-                    A generic message
-                    <i class="fa fa-circle input-feedback-icon"></i>
-                </div>
-            </div>
-        </form>
-
-        <form data-typeset="Buttons">
-            <div class="form-entry">
-                <input type="button" value="Default">
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-primary"> Primary </button>
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-success"> Success </button>
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-error"> Error </button>
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-warning"> Warning </button>
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-secondary"> Secondary </button>
-            </div>
-
-            <div class="form-entry">
-                <button class="btn-not-important"> Not important </button>
-            </div>
-        </form>
-
-        <form data-typeset="Modals">
-            <div class="modal">
-                <header class="modal__header">
-                    My Supper Modal Title
-                    <i class="fa fa-times-circle modal__header__icon"></i>
-                </header>
-                <div class="modal__body">
-
-                </div>
-            </div>
-
-            <div class="modal">
-                <header class="modal__header">
-                    Die
-                    <i class="fa fa-times-circle modal__header__icon"></i>
-                </header>
-
-                <div class="modal__body">
-                    <p class="modal__text">
-                        Wanna jump off the roof?
-                    </p>
+    <div class="overlay">
+        <!-- <div class="modal joining-modal">
+            <header class="modal__header">
+                Join Us
+                <i class="fa fa-times-circle modal__header__icon"></i>
+            </header>
+            <div class="modal__body">
+                <div class="form-entry form-entry--modal">
+                    <div class="underlined-headline">
+                        You're Not Alone Anymore! You're <br>
+                        Becoming One Of Us!
+                    </div>
                 </div>
 
-                <footer class="modal__footer">
-                    <div class="modal__footer__action modal__footer__action--no">No</div>
-                    <div class="modal__footer__action modal__footer__action--yes">Yes</div>
-                </footer>
+                <div class="form-entry form-entry--modal form-entry--social-links">
+                    <button class="btn-secondary"> Twitter </button>
+                    <button> Github </button>
+                </div>
+
+                <div class="form-entry form-entry--modal">
+                    <div class="divider"> OR </div>
+                </div>
+
+                <form action="" class="form-entry form-entry--modal">
+                    <div class="form-entry">
+                        <input type="text" placeholder="Email">
+                    </div>
+
+                    <div class="form-entry">
+                        <input type="text" placeholder="Password">
+                    </div>
+
+                    <div class="form-entry">
+                        <input type="checkbox" id="nada">
+                        <label for="nada">Checking this thing won’t change a damn thing!</label>
+                    </div>
+
+                    <div class="form-entry">
+                        <input type="submit" value="Join" class="text-uppercase">
+                    </div>
+                </form>
             </div>
-        </form>
+        </div> -->
+
+        <div class="modal connecting-model">
+            <header class="modal__header">
+                Connect
+                <i class="fa fa-times-circle modal__header__icon"></i>
+            </header>
+            <div class="modal__body">
+                <div class="form-entry form-entry--modal">
+                    <div class="underlined-headline">
+                        You Will Be Home Soon, Tell Us<br>
+                        who You Are!
+                    </div>
+                </div>
+
+                <div class="form-entry form-entry--modal row">
+                    <button class="btn-secondary six columns"> Twitter </button>
+                    <button class="six columns"> Github </button>
+                </div>
+
+                <div class="form-entry form-entry--modal">
+                    <div class="divider"> OR </div>
+                </div>
+
+                <form action="" class="form-entry form-entry--modal">
+                    <div class="form-entry">
+                        <input type="text" placeholder="Email">
+                    </div>
+
+                    <div class="form-entry">
+                        <input type="text" placeholder="Password">
+                    </div>
+
+                    <div class="form-entry row">
+                        <div class="six columns">
+                            <input type="checkbox" id="remember-me">
+                            <label for="nada">Remember me</label>
+                        </div>
+
+                        <div class="six columns text-right">
+                            <a href="#">Forgot it 😅</a>
+                        </div>
+                    </div>
+
+                    <div class="form-entry">
+                        <input type="submit" value="Enter" class="text-uppercase">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
