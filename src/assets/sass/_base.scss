@@ -14,4 +14,11 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
-a { color: $iron; }
+a {
+    color: $iron;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
