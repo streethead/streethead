@@ -1,0 +1,23 @@
+/* Utilities */
+
+.zellige {
+    background-color: $yellow;
+    position: relative;
+    z-index: 1;
+}
+
+.zellige::before {
+    background: url(../images/mopattern.jpg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.03;
+    z-index: -1;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }

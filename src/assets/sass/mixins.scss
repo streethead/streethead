@@ -1,0 +1,4 @@
+@mixin btn-variation($main-color, $shadow-color) {
+    background-color: $main-color;
+    box-shadow: 0px 2px 0px $shadow-color;
+}

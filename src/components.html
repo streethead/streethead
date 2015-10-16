@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Streethead</title>
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <form data-typeset="Inputs">
+            <div class="form-entry">
+                <input type="text" placeholder="Username" value="electrik_frog">
+            </div>
+
+            <div class="form-entry has-success">
+                <input type="text" placeholder="Username" value="electrik_frog">
+                <div class="input-feedback">
+                    You user name is available
+                    <i class="fa fa-check-circle input-feedback-icon"></i>
+                </div>
+            </div>
+
+            <div class="form-entry has-error">
+                <input type="text" placeholder="Email" value="not_a_valid@email">
+                <div class="input-feedback">
+                    Please provide us with a valid email adress
+                    <i class="fa fa-info-circle input-feedback-icon"></i>
+                </div>
+            </div>
+
+            <div class="form-entry has-warning">
+                <input type="password" placeholder="Password" value="letmein">
+                <div class="input-feedback">
+                    This password is not strong enough
+                    <i class="fa fa-warning input-feedback-icon"></i>
+                </div>
+            </div>
+
+            <div class="form-entry has-state">
+                <input type="text" placeholder="Something" class="has-state">
+                <div class="input-feedback">
+                    A generic message
+                    <i class="fa fa-circle input-feedback-icon"></i>
+                </div>
+            </div>
+        </form>
+
+        <form data-typeset="Buttons">
+            <div class="form-entry">
+                <input type="button" value="Default">
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-primary"> Primary </button>
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-success"> Success </button>
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-error"> Error </button>
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-warning"> Warning </button>
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-secondary"> Secondary </button>
+            </div>
+
+            <div class="form-entry">
+                <button class="btn-not-important"> Not important </button>
+            </div>
+        </form>
+
+        <form data-typeset="Modals">
+            <div class="modal">
+                <header class="modal__header">
+                    My Supper Modal Title
+                    <i class="fa fa-times-circle modal__header__icon"></i>
+                </header>
+                <div class="modal__body">
+
+                </div>
+            </div>
+
+            <div class="modal">
+                <header class="modal__header">
+                    Die
+                    <i class="fa fa-times-circle modal__header__icon"></i>
+                </header>
+
+                <div class="modal__body">
+                    <p class="modal__text">
+                        Wanna jump off the roof?
+                    </p>
+                </div>
+
+                <footer class="modal__footer">
+                    <div class="modal__footer__action modal__footer__action--no">No</div>
+                    <div class="modal__footer__action modal__footer__action--yes">Yes</div>
+                </footer>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

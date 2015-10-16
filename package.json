@@ -1,0 +1,27 @@
+{
+  "name": "streethead",
+  "description": "Streethead SPA",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streethead/streethead.git"
+  },
+  "author": "Motaquillah Maddane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streethead/streethead/issues"
+  },
+  "homepage": "https://github.com/streethead/streethead#readme",
+  "dependencies": {
+    "font-awesome": "^4.4.0",
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}

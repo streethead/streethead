@@ -1,0 +1,155 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > form {
+    width: 33.3333%;
+    padding: 10px;
+    padding-top: 80px;
+    border-top: $iron 6px solid;
+    position: relative;
+
+    &::before {
+        content: attr(data-typeset);
+        font-size: 25px;
+        font-weight: 900;
+        padding: 10px 40px;
+        background-color: $iron;
+        color: #fff;
+        position: absolute;
+        top: -6px;
+        left:0px;
+    }
+}
+
+.form-entry {
+    margin-bottom: 25px;
+}
+
+.form-entry:last-child {
+    margin-bottom: 0px;
+}
+
+.modal {
+    margin-bottom: 25px;
+}
+
+.modal:last-child {
+    margin-bottom: 0px;
+}
+
+/* Up to here just for dev purpose */
+
+/* =Inputs */
+input[type="text"],
+input[type="password"] {
+    border: $iron 1px solid;
+    border-radius: $radius;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 300;
+    display: block;
+}
+
+.form-entry input[type="text"],
+.form-entry input[type="password"]{
+    width: 100%;
+}
+
+.input-feedback {
+    background-color: $iron;
+    padding: 8px 15px;
+    padding-right: 16px; /* Make room for the icon */
+    border-radius: 0 0 $radius $radius;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+}
+
+.input-feedback-icon {
+    position: absolute;
+    right: 8px;
+    font-size: 14px;
+}
+
+.has-state {
+    input { border-radius: $radius $radius 0 0 !important; }
+}
+
+.has-error {
+    @extend .has-state;
+    input { border-color: $error; }
+    .input-feedback { background-color: $error; }
+}
+
+.has-success {
+    @extend .has-state;
+    input { border-color: $success; }
+    .input-feedback { background-color: $success; }
+}
+
+.has-warning {
+    @extend .has-state;
+    input { border-color: $warning; }
+    .input-feedback { background-color: $warning; }
+}
+
+/* =Buttons */
+input[type="button"],
+button {
+    border: none;
+    border-radius: $radius;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    text-align: center;
+    @include btn-variation($iron, $iron-shadow);
+
+    &:active {
+        position: relative;
+        top: 2px;
+        box-shadow: none;
+    }
+
+    &:active:focus,
+    &:focus{
+        outline: 0;
+    }
+}
+
+.btn-primary {
+    @include btn-variation($yellow, $yellow-shadow);
+}
+
+.btn-success {
+    @include btn-variation($success, $success-shadow);
+}
+
+.btn-error {
+    @include btn-variation($error, $error-shadow);
+}
+
+.btn-warning {
+    @include btn-variation($warning, $warning-shadow);
+}
+
+.btn-secondary {
+    @include btn-variation($secondary, $secondary-shadow);
+}
+
+.btn-not-important {
+    @include btn-variation($not-important, $not-important-shadow);
+}
+
+/* =Forms */
+.form-entry input[type="text"],
+.form-entry input[type="password"],
+.form-entry input[type="button"],
+.form-entry button {
+    width: 100%;
+}
