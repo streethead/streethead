@@ -3,7 +3,7 @@
 	[
 		{
             "path": ".",
-            "name": "Streethead Single App",
+            "name": "Streethead Single Page App",
             "folder_exclude_patterns": ["node_modules", ".temp"]
         }
 	]

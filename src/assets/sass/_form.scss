@@ -66,6 +66,14 @@ button {
     }
 }
 
+.btn--no-interactions {
+    box-shadow: none;
+
+    &:hover {
+        top: 0px;
+    }
+}
+
 .btn-primary { @include btn-variation($yellow, $yellow-shadow); }
 .btn-success { @include btn-variation($success, $success-shadow); }
 .btn-error { @include btn-variation($error, $error-shadow); }

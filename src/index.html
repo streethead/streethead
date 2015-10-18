@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Streethead</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <base href="/">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="assets/fonts/core.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- /CSS -->
 </head>
-<body>
-    <div class="wrapper">
-        <div class="body zellige">
-            <ul class="access-links">
-                <li class="access-links__item"><a href="#">Join us</a></li>
-                <li class="access-links__item"><a href="#">Connect</a></li>
-            </ul>
+<body ng-app="sh">
 
-            <div class="logo">
-                <img src="assets/images/logo.svg" alt="">
-            </div>
+    <div ui-view></div>
 
-            <div class="search-box">
-                <h1 class="search-bar__headline">A place with pationate people, just like you.</h1>
-                <div class="search-bar">
-                    <input type="text">
-                    <button>Find</button>
-                </div>
-                <p class="search-bar__description">You can search for people & events by intersets. eg: Javascript, PHP, Ruby, Pytho, etc...</p>
-            </div>
-        </div>
+    <div sh-modals-container></div>
 
-        <footer class="footer">
-            <p class="footer__text text-left">From Morocco with love</p>
-            <p class="footer__text text-right">Streethead © All rights are not reserved.</p>
-        </footer>
-    </div>
+    <!-- JS -->
+    <!-- Vendor files -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
+    <script src="../node_modules/underscore/underscore-min.js"></script>
+
+    <!-- Application files -->
+    <script src="app/sh.module.js"></script>
+    <script src="app/config/routes.config.js"></script>
+    <script src="app/config/modals.config.js"></script>
+
+    <script src="app/access/join.controller.js"></script>
+    <script src="app/access/connect.controller.js"></script>
+
+    <script src="app/components/modal/modal.service.js"></script>
+    <script src="app/components/modal/modals-container.directive.js"></script>
+    <script src="app/components/modal/modal.directive.js"></script>
+    <script src="app/components/modal/open-modal.direcitve.js"></script>
+    <script src="app/components/modal/close-modal.directive.js"></script>
+    <!-- /JS -->
 </body>
 </html>

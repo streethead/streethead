@@ -1,0 +1,21 @@
+<div class="overlay" ng-if="vm.modal.isOpen">
+    <div class="modal joining-modal" ng-show="vm.states.loaded">
+        <header class="modal__header">
+            {{ vm.modal.title }}
+            <i class="fa fa-times-circle modal__header__icon" ng-click="vm.close()"></i>
+        </header>
+
+        <div
+            ng-if="vm.modal.templateUrl"
+            ng-include="vm.modal.templateUrl"
+            onload="vm.loading()"
+            class="modal__body"
+        ></div>
+    </div>
+
+    <div class="modal joining-modal modal--loading" ng-hide="vm.states.loaded">
+        <div class="modal__body">
+            <i class="fa fa-refresh fa-spin fa-4x"></i>
+        </div>
+    </div>
+</div>

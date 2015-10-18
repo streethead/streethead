@@ -1,7 +1,25 @@
+.modal-is-open {
+  overflow: hidden;
+}
+
+.overlay {
+    display: flex;
+    background-color: rgba(36, 37, 40, 0.6);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 .modal {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: $radius;
     overflow: hidden;
+    z-index: 11;
 }
 
 .modal__header {
@@ -62,4 +80,8 @@
     &:hover {
         background-color: $not-important-shadow;
     }
+}
+
+.modal--loading {
+    text-align: center;
 }

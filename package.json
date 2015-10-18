@@ -12,8 +12,11 @@
   },
   "homepage": "https://github.com/streethead/streethead#readme",
   "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
     "font-awesome": "^4.4.0",
-    "normalize.css": "^3.0.3"
+    "normalize.css": "^3.0.3",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
