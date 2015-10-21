@@ -23,21 +23,27 @@
     <!-- Vendor files -->
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
-    <script src="../node_modules/underscore/underscore-min.js"></script>
+    <script src="node_modules/underscore/underscore-min.js"></script>
+    <script src="node_modules/satellizer/satellizer.min.js"></script>
 
     <!-- Application files -->
     <script src="app/sh.module.js"></script>
+    <script src="app/config/app.config.js"></script>
     <script src="app/config/routes.config.js"></script>
-    <script src="app/config/modals.config.js"></script>
 
-    <script src="app/access/join.controller.js"></script>
-    <script src="app/access/connect.controller.js"></script>
+    <script src="app/access/access.module.js"></script>
+    <script src="app/access/access.config.js"></script>
+    <script src="app/access/connect/connect.controller.js"></script>
+    <script src="app/access/join/join.controller.js"></script>
+    <script src="app/access/reset/reset.controller.js"></script>
+
+    <script src="app/components/components.module.js"></script>
 
     <script src="app/components/modal/modal.service.js"></script>
-    <script src="app/components/modal/modals-container.directive.js"></script>
+    <script src="app/components/modal/modals-container/modals-container.directive.js"></script>
     <script src="app/components/modal/modal.directive.js"></script>
-    <script src="app/components/modal/open-modal.direcitve.js"></script>
-    <script src="app/components/modal/close-modal.directive.js"></script>
+    <script src="app/components/modal/helpers/open-modal.direcitve.js"></script>
+    <script src="app/components/modal/helpers/close-modal.directive.js"></script>
     <!-- /JS -->
 </body>
 </html>

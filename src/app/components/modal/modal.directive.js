@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('sh')
+    angular.module('sh.components')
         .directive('shModal', shModal);
 
     function shModal() {

@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    angular.module('sh')
-        .directive('shCloseModal', shModal);
+    angular.module('sh.components')
+        .directive('shOpenModal', shModal);
 
     function shModal(Modal) {
         return {
@@ -15,7 +15,7 @@
             elm.on('click', showModal);
 
             function showModal(e) {
-                scope.$apply(function() { Modal.close(attrs.shCloseModal); });
+                scope.$apply(function() { Modal.open(attrs.shOpenModal); });
                 e.preventDefault();
             }
 

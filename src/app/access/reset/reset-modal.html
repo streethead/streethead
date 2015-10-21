@@ -1,0 +1,27 @@
+<sh-modal sh-title="Reset Your Account">
+    <form ng-controller="ResetController as vm">
+        <div class="form-entry form-entry--modal">
+            <div class="underlined-headline">
+                Don’t Worry We Got Your Back!
+            </div>
+        </div>
+
+        <div class="form-entry">
+            <input type="text" placeholder="Email">
+        </div>
+
+        <div class="form-entry">
+            <input type="submit" value="Enter" class="text-uppercase">
+        </div>
+
+        <div class="form-entry row">
+            <div class="six columns">
+                <a href="#" sh-open-modal="connect">Connect</a>
+            </div>
+
+            <div class="six columns text-right">
+                <a href="#" sh-open-modal="join">Create an account</a>
+            </div>
+        </div>
+    </form>
+</sh-modal>

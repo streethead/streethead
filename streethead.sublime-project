@@ -2,9 +2,13 @@
 	"folders":
 	[
 		{
-            "path": ".",
-            "name": "Streethead Single Page App",
-            "folder_exclude_patterns": ["node_modules", ".temp"]
-        }
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				".temp"
+			],
+			"name": "SPA",
+			"path": "."
+		}
 	]
 }

@@ -1,13 +1,13 @@
 (function () {
     'use strict';
 
-    angular.module('sh')
+    angular.module('sh.components')
         .directive('shModalsContainer', shModalsContainer);
 
     function shModalsContainer($rootScope) {
         return {
             link: link,
-            templateUrl: 'app/components/modal/modals-container.html',
+            templateUrl: 'app/components/modal/modals-container/modals-container.html',
             scope: {},
             controller: controller, /* As a way to communicate with sub-directives */
             bindToController: true,

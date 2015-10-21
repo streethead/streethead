@@ -2,7 +2,7 @@
 
     'use strict';
 
-    angular.module('sh')
+    angular.module('sh.components')
         .provider('Modal', modalProvider);
 
     function modalProvider() {

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('sh')
+    angular.module('sh.access')
         .controller('JoinController', JoinController);
 
     function JoinController() {}

@@ -10,6 +10,7 @@
 /* >Inputs */
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     border: $iron 1px solid;
     border-radius: $radius;
@@ -64,6 +65,11 @@ button {
     &:focus {
         outline: 0;
     }
+
+    &:disabled {
+        cursor: not-allowed;
+        @include btn-variation($not-important, $not-important-shadow);
+    }
 }
 
 .btn--no-interactions {
@@ -72,6 +78,10 @@ button {
     &:hover {
         top: 0px;
     }
+}
+
+.btn--processing {
+    color: $iron;
 }
 
 .btn-primary { @include btn-variation($yellow, $yellow-shadow); }
@@ -113,9 +123,20 @@ label {
 }
 
 .form-entry input[type="text"],
+.form-entry input[type="email"],
 .form-entry input[type="submit"],
 .form-entry input[type="password"],
 .form-entry input[type="button"],
 .form-entry button {
     width: 100%;
 }
+
+/* >Alerts */
+.alert {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.error-alert { color: $error; }
+.success-alert { color: $success; }

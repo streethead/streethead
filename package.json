@@ -17,6 +17,7 @@
     "animate.css": "^3.4.0",
     "font-awesome": "^4.4.0",
     "normalize.css": "^3.0.3",
+    "satellizer": "^0.12.5",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

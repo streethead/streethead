@@ -1,5 +1,5 @@
 <sh-modal sh-title="Connect">
-    <form action="" class="form-entry form-entry--modal" ng-controller="ConnectController as vm">
+    <form novalidate name="connectForm" class="form-entry form-entry--modal" ng-controller="ConnectController as vm">
         <div class="form-entry form-entry--modal">
             <div class="underlined-headline">
                 You Will Be Home Soon, Tell Us<br>
@@ -17,11 +17,25 @@
         </div>
 
         <div class="form-entry">
-            <input type="text" placeholder="Email">
+            <input name="email" type="email" placeholder="Email" ng-model="vm.email" ng-required="true">
         </div>
 
         <div class="form-entry">
-            <input type="text" placeholder="Password">
+            <input type="password" placeholder="Password" ng-model="vm.password" ng-required="true">
+        </div>
+
+        <div class="form-entry alert error-alert" ng-if="vm.error">
+            <i class="fa fa-info-circle"></i> {{ vm.error }}
+        </div>
+
+        <div class="form-entry">
+            <button ng-click="vm.login()"
+                ng-disabled="connectForm.$invalid || vm.isProcessing"
+                class="text-uppercase"
+                ng-class="{'btn--processing': vm.isProcessing}">
+                <span ng-hide="vm.isProcessing">Enter</span>
+                <i class="fa fa-spinner fa-pulse" ng-show="vm.isProcessing"></i>
+            </button>
         </div>
 
         <div class="form-entry row">
@@ -31,12 +45,8 @@
             </div>
 
             <div class="six columns text-right">
-                <a href="#">Forgot it 😅</a>
+                <a href="#" sh-open-modal="reset">Forgot it 😅</a>
             </div>
-        </div>
-
-        <div class="form-entry">
-            <input type="submit" value="Enter" class="text-uppercase">
         </div>
     </form>
 </sh-modal>
